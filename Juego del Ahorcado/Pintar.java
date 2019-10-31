@@ -1,17 +1,16 @@
-
 public class Pintar {
-
-	public static void pintaMu�eco(String vFallos[], String vHuecos[]) {
+//Método separado del programa principal, donde acumulamos los fallos recorriendo su vector y dibujamos el muñeco por fases
+	public static void pintaMuñeco(String vFallos[], String vHuecos[]) {
 		int fallos = 0;
 		
-		//Calculo el n�mero de fallos
+		//Calculo el número de fallos
 		
 		for (int i= 0; i < vFallos.length; i++) {
 			if (vFallos[i]!=null) 
 				fallos++;
 			}
 	
-		//Pinta Mu�eco
+		//Pinta Muñeco
 		
 		switch (fallos) {
 		case 1:
@@ -122,7 +121,7 @@ public class Pintar {
 	        System.out.println(" _______________________________");
 			break;
 		}
-		
+		//Aquí, asignamos la cantidad de fallos y hacemos que nos la muestre
 		System.out.println();
 		System.out.println();
 		for (int i=0; i < vHuecos.length; i++) {
