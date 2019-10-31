@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Ahorcado {
 
-	//Método que Comprueba que la partida está acabada o 0 vidas
+	//Método que Comprueba y muestra que la partida está ganada
 	public static boolean partidaGanada(String vHuecos[]) {
 		boolean acabado = true;
 		
@@ -20,7 +20,7 @@ public class Ahorcado {
 		return acabado;
 		
 	}
-	
+	//Método que comprueba y muestra que has perdido la partida 
 	public static boolean partidaPerdida(String vFallos[]) {
 		boolean acabado = true;
 		
@@ -76,7 +76,7 @@ public class Ahorcado {
 			}
 		}
 	}
-	
+	//Método usando la función Random para extraer al azar una palabra de las proporcionadas para jugar
 	public static String damePalabra() {
 		String[] palabras = {"Juan", "Lapiz", "Mandarina", "Honolulu", "Abrecartas"};
 		Random r = new Random();
@@ -101,7 +101,7 @@ public class Ahorcado {
 		inicializarVectores(vHuecos, vSolucion, respuesta);
 		
 		
-		
+		//Conjunto principal del programa, con los metodos a utilizar
 		do  {
 			Pintar.pintaMuñeco(vFallos, vHuecos);
 			preguntarLetra(vFallos, vHuecos, vSolucion);
